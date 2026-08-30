@@ -29,7 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         # 安装基础依赖
         pip install requests>=2.25.0 pycryptodome>=3.9.0 PyNaCl>=1.4.0
-        # 使用 GitHub 源码压缩包安装 pyncm 避免触发 git 交互认证
+        # --- 直接从 GitHub 仓库压缩包安装 pyncm，避免 git 交互认证 ---
         pip install https://github.com/mos9527/pyncm/archive/refs/heads/master.zip
 
     - name: Run scoring script
